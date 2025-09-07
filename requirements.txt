@@ -1,0 +1,18 @@
+# Core dependencies
+websockets>=12.0
+jsonschema>=4.0
+numba>=0.56.0
+numpy>=1.21.0
+
+# Optional performance enhancement
+uvloop>=0.17.0; sys_platform != 'win32'
+
+# Development dependencies (uncomment for development)
+# pytest>=7.0
+# pytest-asyncio
+# pytest-cov
+# black
+# isort
+# flake8
+# mypy
+# pre-commit
