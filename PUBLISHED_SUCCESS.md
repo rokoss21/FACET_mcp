@@ -1,32 +1,32 @@
-# ✅ FACET MCP Server успешно опубликован на PyPI!
+# ✅ FACET MCP Server Successfully Published to PyPI!
 
-## 📦 Пакет доступен для установки:
+## 📦 Package Available for Installation:
 \`\`\`bash
 pip install facet-mcp-server
 \`\`\`
 
-## 🔗 Ссылки:
+## 🔗 Links:
 - **PyPI:** https://pypi.org/project/facet-mcp-server/
 - **GitHub:** https://github.com/rokoss21/FACET_mcp
-- **Документация:** https://github.com/rokoss21/FACET_mcp/blob/main/README.md
+- **Documentation:** https://github.com/rokoss21/FACET_mcp/blob/main/README.md
 
-## 🛠️ Быстрый старт:
+## 🛠️ Quick Start:
 \`\`\`bash
-# Установить
+# Install
 pip install facet-mcp-server
 
-# Запустить сервер
+# Start server
 facet-mcp start
 
-# Посмотреть инструменты
+# View tools
 facet-mcp tools
 \`\`\`
 
-## 🎯 Для AI агентов:
-Три мощных инструмента готовы к использованию:
-- \`execute\` - Выполнение полных FACET документов
-- \`apply_lenses\` - Атомарные текстовые трансформации  
-- \`validate_schema\` - Валидация JSON данных
+## 🎯 For AI Agents:
+Three powerful tools ready to use:
+- \`execute\` - Execute complete FACET documents
+- \`apply_lenses\` - Atomic text transformations
+- \`validate_schema\` - JSON data validation
 
-**🚀 Теперь любой AI агент может стать высокопроизводительным менеджером!**
+**🚀 Now any AI agent can become a high-performance manager!**
 

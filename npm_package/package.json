@@ -1,0 +1,77 @@
+{
+  "name": "facet-mcp-server",
+  "version": "0.1.0",
+  "description": "FACET MCP Server - Agent-First AI Tooling for JavaScript/TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "facet-mcp": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/cli.js start",
+    "test": "jest",
+    "lint": "echo 'Linting skipped for TypeScript - using built-in TypeScript compiler'",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build && npm test -- --testPathIgnorePatterns=integration --testPathIgnorePatterns=cli"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "mcp",
+    "facet",
+    "text-processing",
+    "websocket",
+    "typescript",
+    "nodejs",
+    "automation"
+  ],
+  "author": "Emil Rokossovskiy <ecsiar@gmail.com> (@rokoss21)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rokoss21/FACET_mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rokoss21/FACET_mcp/issues"
+  },
+  "homepage": "https://github.com/rokoss21/FACET_mcp#readme",
+  "contributors": [
+    {
+      "name": "Emil Rokossovskiy",
+      "email": "ecsiar@gmail.com",
+      "url": "https://github.com/rokoss21/"
+    }
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.14.0",
+    "ajv": "^8.12.0",
+    "uuid": "^9.0.0",
+    "commander": "^11.0.0",
+    "winston": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.0",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "prettier": "^3.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

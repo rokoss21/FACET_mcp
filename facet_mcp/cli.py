@@ -100,7 +100,8 @@ def cmd_tools(args):
         print(f"   📝 Returns: {description['returns']}")
 
         if args.verbose:
-            print("   📋 Parameters:"            for param_name, param_schema in description['parameters']['properties'].items():
+            print("   📋 Parameters:")
+            for param_name, param_schema in description['parameters']['properties'].items():
                 required = param_name in description['parameters'].get('required', [])
                 required_mark = " (required)" if required else ""
                 param_type = param_schema.get('type', 'any')
@@ -168,7 +169,8 @@ def cmd_examples(args):
             print(f"\n🔧 {name}")
             print(f"   {example['description']}")
             if args.verbose:
-                print("   📝 Schema properties:"                print(f"     {list(example['json_schema'].get('properties', {}).keys())}")
+                print("   📝 Schema properties:")
+                print(f"     {list(example['json_schema'].get('properties', {}).keys())}")
 
     if args.category == "workflow" or args.category == "all":
         print("\n🔄 Complete Workflow Examples")

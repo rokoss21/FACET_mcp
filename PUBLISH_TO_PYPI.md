@@ -1,23 +1,23 @@
-# 🚀 Публикация FACET MCP Server на PyPI
+# 🚀 Publishing FACET MCP Server to PyPI
 
-## 📋 Предварительные требования
+## 📋 Prerequisites
 
-1. **Создайте API токен PyPI:**
-   - Перейдите на https://pypi.org/manage/account/token/
-   - Создайте новый API токен с областью `__token__`
-   - Скопируйте токен (начинается с `pypi-`)
+1. **Create PyPI API Token:**
+   - Go to https://pypi.org/manage/account/token/
+   - Create new API token with `__token__` scope
+   - Copy the token (starts with `pypi-`)
 
-2. **Установите необходимые инструменты:**
+2. **Install Required Tools:**
    ```bash
    pip install build twine
    ```
 
-## 🧪 Шаг 1: Тестирование на Test PyPI (рекомендуется)
+## 🧪 Step 1: Testing on Test PyPI (Recommended)
 
-Сначала опубликуйте на Test PyPI для проверки:
+First publish to Test PyPI for verification:
 
 ```bash
-# Создайте файл ~/.pypirc с настройками
+# Create ~/.pypirc file with settings
 cat > ~/.pypirc << EOF
 [distutils]
 index-servers =
@@ -34,20 +34,20 @@ username = __token__
 password = pypi-YOUR_TOKEN_HERE
 EOF
 
-# Загрузите на Test PyPI
+# Upload to Test PyPI
 python3 -m twine upload --repository testpypi dist/*
 
-# Проверьте установку
+# Check installation
 pip install --index-url https://test.pypi.org/simple/ facet-mcp-server
 ```
 
-## 🚀 Шаг 2: Публикация на основном PyPI
+## 🚀 Step 2: Publishing to Main PyPI
 
-После успешного тестирования:
+After successful testing:
 
 ```bash
-# Обновите ~/.pypirc с реальным токеном PyPI
-# (замените pypi-YOUR_REAL_TOKEN_HERE на ваш настоящий токен)
+# Update ~/.pypirc with real PyPI token
+# (replace pypi-YOUR_REAL_TOKEN_HERE with your actual token)
 
 cat > ~/.pypirc << EOF
 [distutils]
@@ -58,46 +58,46 @@ username = __token__
 password = pypi-YOUR_REAL_TOKEN_HERE
 EOF
 
-# Загрузите на основной PyPI
+# Upload to main PyPI
 python3 -m twine upload dist/*
 ```
 
-## ✅ Шаг 3: Проверка успешной публикации
+## ✅ Step 3: Verification of Successful Publication
 
 ```bash
-# Проверьте, что пакет доступен
+# Check that package is available
 pip install facet-mcp-server
 
-# Протестируйте установку
+# Test installation
 facet-mcp --help
 facet-mcp tools
 ```
 
-## 🎯 Результат
+## 🎯 Result
 
-После успешной публикации команда `pip install facet-mcp-server` будет работать глобально! 🎉
+After successful publication, the command `pip install facet-mcp-server` will work globally! 🎉
 
-**Проверьте:**
+**Check:**
 - https://pypi.org/project/facet-mcp-server/
 - https://pypi.org/project/facet-mcp-server/0.1.0/
 
 ---
 
-## 🔧 Команды для быстрой публикации
+## 🔧 Quick Publishing Commands
 
-### Для Test PyPI:
+### For Test PyPI:
 ```bash
 TWINE_USERNAME=__token__ TWINE_PASSWORD=pypi-YOUR_TOKEN twine upload --repository testpypi dist/*
 ```
 
-### Для основного PyPI:
+### For Main PyPI:
 ```bash
 TWINE_USERNAME=__token__ TWINE_PASSWORD=pypi-YOUR_TOKEN twine upload dist/*
 ```
 
-### Или интерактивно:
+### Or Interactively:
 ```bash
 python3 -m twine upload dist/*
-# Введите: __token__
-# Введите ваш токен
+# Enter: __token__
+# Enter your token
 ```
