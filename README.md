@@ -87,6 +87,36 @@ This server provides AI agents with three powerful tools:
 
 ---
 
+## 📦 **Package Releases**
+
+### **📥 Download Latest Release**
+All package files are available in our [GitHub Releases](https://github.com/rokoss21/FACET/releases):
+
+#### **Latest Release: [v1.0.2](https://github.com/rokoss21/FACET/releases/tag/v1.0.2)**
+- ✅ **`package.json`** - Complete npm package configuration
+- ✅ **`tsconfig.json`** - TypeScript compiler settings
+- ✅ **`README.md`** - Package documentation
+- ✅ **70 passing tests** - Complete test suite
+- ✅ **TypeScript types** - Full type definitions
+- ✅ **Source maps** - For debugging
+
+### **🎯 Installation Options**
+```bash
+# Option 1: npm (recommended)
+npm install facet-mcp-server
+
+# Option 2: From GitHub releases
+# Download package.json from releases and run:
+npm install
+```
+
+### **📚 Additional Resources**
+- **[npm Package](https://www.npmjs.com/package/facet-mcp-server)** - Official npm registry
+- **[PyPI Package](https://pypi.org/project/facet-mcp-server/)** - Python package
+- **[GitHub Repository](https://github.com/rokoss21/FACET)** - Main FACET repository
+
+---
+
 ## 🚀 **Quick Start - 3 Minutes to Production**
 
 ### **Step 1: Install**
