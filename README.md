@@ -91,9 +91,9 @@ This server provides AI agents with three powerful tools:
 ## 📦 **Package Releases**
 
 ### **📥 Download Latest Release**
-All package files are available in our [GitHub Releases](https://github.com/rokoss21/FACET/releases):
+All package files are available in our [GitHub Releases](https://github.com/rokoss21/FACET_mcp/releases):
 
-#### **Latest Release: [v1.0.2](https://github.com/rokoss21/FACET/releases/tag/v1.0.2)**
+#### **Latest Release: [v1.0.2](https://github.com/rokoss21/FACET_mcp/releases/tag/v1.0.2)**
 - ✅ **`package.json`** - Complete npm package configuration
 - ✅ **`tsconfig.json`** - TypeScript compiler settings
 - ✅ **`README.md`** - Package documentation
